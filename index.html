@@ -47,7 +47,8 @@ a:hover~.cur,.btn-hover:hover~.cur{transform:translate(-50%,-50%) scale(1.8)}
 nav{position:fixed;top:0;left:0;right:0;z-index:500;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;transition:all .4s}
 nav.scrolled{background:rgba(253,250,246,.96);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--border);box-shadow:0 2px 20px rgba(201,129,106,.07)}
 .nav-logo{text-decoration:none;display:flex;align-items:center;gap:14px}
-.nav-logo-monogram{width:42px;height:42px;border-radius:10px;background:var(--grd);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:white;font-size:1rem;letter-spacing:.5px;box-shadow:0 4px 16px rgba(201,129,106,.35);flex-shrink:0}
+.nav-logo-monogram{width:42px;height:42px;border-radius:50%;overflow:hidden;box-shadow:0 4px 16px rgba(201,129,106,.35);flex-shrink:0;border:2px solid var(--rose)}
+.nav-logo-monogram img{width:100%;height:100%;object-fit:cover;object-position:top center}
 .nav-logo-text{}
 .nav-logo-name{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;color:var(--teal);letter-spacing:.2px;display:block;line-height:1.1}
 .nav-logo-sub{font-size:.58rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--rose);display:block;margin-top:1px;font-weight:500}
@@ -366,7 +367,7 @@ footer{background:var(--teal3);padding:64px 6% 32px;position:relative;z-index:1}
 <!-- NAV -->
 <nav id="mainNav">
   <a href="#" class="nav-logo">
-    <div class="nav-logo-monogram">BC</div>
+    <div class="nav-logo-monogram"><img src="images/profile.jpg" alt="Dra. Bia Cecily"/></div>
     <div class="nav-logo-text">
       <span class="nav-logo-name">Dra. Bia Cecily</span>
       <span class="nav-logo-sub">Cirurgiã-Dentista</span>
